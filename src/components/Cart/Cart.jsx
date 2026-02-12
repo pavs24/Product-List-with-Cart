@@ -13,7 +13,7 @@ function Cart() {
 
         {cartItems.length === 0 ?(
         <div className="cart-empty">
-            <img src="./src/assets/images/illustration-empty-cart.svg" alt="Empty Cart" />
+            <img src="/assets/images/illustration-empty-cart.svg" alt="Empty Cart" />
             <p>Your added items will appear here</p>
         </div>
         ): (
@@ -33,7 +33,7 @@ function Cart() {
           <>
 
           <div className="carbon-note">
-          <img src="./src/assets/images/icon-carbon-neutral.svg" alt="Carbon Neutral" />
+          <img src={import.meta.env.BASE_URL + "assets/images/icon-carbon-neutral.svg"} alt="Carbon Neutral" />
           <p>
             This is a <strong>carbon-neutral</strong> delivery
           </p>

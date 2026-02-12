@@ -13,7 +13,7 @@ function OrderModal({ onClose }) {
     <div className="modal-overlay">
       <div className="modal">
         <img
-          src="./src/assets/images/icon-order-confirmed.svg"
+          src={import.meta.env.BASE_URL + "assets/images/icon-order-confirmed.svg"}
           alt="Order Confirmed"
           className="success-icon"
         />

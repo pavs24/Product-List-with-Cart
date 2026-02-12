@@ -14,7 +14,7 @@ function CartItem(item) {
             </div>
             <div className="button">
             <button className="remove-btn" onClick={() => removeFromCart(item.item.name)}>
-            <img src="./src/assets/images/icon-remove-item.svg" alt="r" />
+            <img src={import.meta.env.BASE_URL + "assets/images/icon-remove-item.svg"} alt="Remove Item" />
             </button>
             </div>
         

@@ -17,14 +17,14 @@ function ProductCard({product}) {
   return (
     <article className="product-card">
         <picture>
-            <source media='(min-width: 1024px)' srcSet={image.desktop}/>
-            <source media='(min-width: 768px)' srcSet={image.tablet}/>
-            <img src={image.mobile} alt={name} />
+            <source media='(min-width: 1024px)' srcSet={import.meta.env.BASE_URL + image.desktop.replace(/^\//, "")}/>
+            <source media='(min-width: 768px)' srcSet={import.meta.env.BASE_URL + image.tablet.replace(/^\//, "")}/>
+            <img src={import.meta.env.BASE_URL + image.mobile.replace(/^\//, "")} alt={name} />
         </picture>
 
         {!cartItem ?(
         <button className="add-to-cart-btn" onClick={() => addToCart(product)}>
-            <img src="./src/assets/images/icon-add-to-cart.svg" alt="add to cart img" />
+            <img src={import.meta.env.BASE_URL + "assets/images/icon-add-to-cart.svg"} alt="add to cart img" />
             <p>Add to Cart</p>
         </button>
         ):(
