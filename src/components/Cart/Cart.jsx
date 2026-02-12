@@ -13,7 +13,7 @@ function Cart() {
 
         {cartItems.length === 0 ?(
         <div className="cart-empty">
-            <img src="/assets/images/illustration-empty-cart.svg" alt="Empty Cart" />
+            <img src={import.meta.env.BASE_URL + "assets/images/illustration-empty-cart.svg"} alt="Empty Cart" />
             <p>Your added items will appear here</p>
         </div>
         ): (
